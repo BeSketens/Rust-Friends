@@ -19,11 +19,9 @@ class Login {
             exit();
         }
 
-        # HTML variable in view
-        $error = '';
-
         # if login form has been submitted
         if (isset($_POST['login-submit'])) {
+            # HTML variable in view
             $error = $this->loginProcess();
         }
 
@@ -56,6 +54,9 @@ class Login {
 
         # set up session variables
         $this->sessionStepUp($user);
+
+        # redirect to update status
+        header('Location: home');
 
         return '';
     }

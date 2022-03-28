@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #222222;
+    color: whitesmoke;
+    font-family: Ebrima, serif;
+}
+
+a {
+    color: whitesmoke;
+}
+
+header {
+    height: 75px;
+    border-bottom: 1px solid firebrick;
+    background-color: #111111;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header div {
+    float: left;
+    padding: 15px;
+}
+
+header nav {
+    float: right;
+    font-size: 1.2rem;
+    margin: 20px;
+}
+
+header nav a {
+    padding: 7px 10px 10px 10px;
+    width: max-content;
+    height: max-content;
+    border: 1px solid #111111;
+}
+
+header nav a:hover {
+    border: 1px solid firebrick;
+}
